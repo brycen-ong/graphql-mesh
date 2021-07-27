@@ -1,0 +1,11 @@
+sources:
+  - name: MyApi
+    handler:
+      jsonSchema:
+        baseUrl: https://reqres.in/api
+        operations:
+          - type: Query
+            field: users
+            path: /users/{args.page}
+            method: GET
+            responseSchema: ./src/json-schema/user.json

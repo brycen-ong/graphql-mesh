@@ -1,0 +1,23 @@
+{
+  "name": "gql-mesh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "graphql-mesh serve",
+    "start-node": "ts-node ./src/index.ts",
+    "generate-mesh": "graphql-mesh generate-sdk --operations \"./src/**/*.graphql\" --output ./src/__generated__/sdk.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.30.2",
+    "@graphql-mesh/graphql": "^0.17.10",
+    "@graphql-mesh/json-schema": "^0.16.1",
+    "graphql": "^15.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.3",
+    "tslib": "^2.3.0"
+  }
+}

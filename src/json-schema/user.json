@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "title": "User Response",
+  "description": "A list of Users pulled from the REST API",
+  "properties": {
+    "data": {
+      "type": "object",
+      "title": "User",
+      "description": "User pulled from the REST API",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "email":{
+          "type": "string"
+        },
+        "first_name":{
+          "type": "string"
+        },
+        "last_name":{
+          "type": "string"
+        },
+        "avatar":{
+          "type": "string"
+        }
+      }
+    }
+  }
+}
